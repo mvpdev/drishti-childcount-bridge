@@ -23,16 +23,6 @@
             <groupId>org.motechproject</groupId>
             <version>${motech.version}</version>
         </dependency>
-        <dependency>
-            <artifactId>motech-sms-api</artifactId>
-            <groupId>org.motechproject</groupId>
-            <version>${motech.version}</version>
-        </dependency>
-        <dependency>
-            <artifactId>motech-sms-http</artifactId>
-            <groupId>org.motechproject</groupId>
-            <version>${motech.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
