@@ -7,7 +7,7 @@
                 {
                     "name": "registerUnderFive",
                     "url": {
-                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "base": "https://www.commcarehq.org/a/mvp-potou/reports/export/",
                         "queryParams": {
                             "nameSpace": "http://openrosa.org/formdesigner/E6511C2B-DFC8-4DEA-8200-CC2F2CED00DA"
                         }
@@ -35,7 +35,7 @@
                 {
                     "name": "registerPregnancy",
                     "url": {
-                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "base": "https://www.commcarehq.org/a/mvp-potou/reports/export/",
                         "queryParams": {
                             "nameSpace": "http://openrosa.org/formdesigner/882FC273-E436-4BA1-B8CC-9CA526FFF8C2"
                         }
@@ -62,7 +62,7 @@
                 {
                     "name": "registerHouseholds",
                     "url": {
-                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "base": "https://www.commcarehq.org/a/mvp-potou/reports/export/",
                         "queryParams": {
                             "nameSpace": "http://openrosa.org/formdesigner/8C652174-BDAE-4300-AEF3-B2F30B20069D"
                         }
@@ -83,7 +83,7 @@
                 {
                     "name": "HouseholdVisit",
                     "url": {
-                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "base": "https://www.commcarehq.org/a/mvp-potou/reports/export/",
                         "queryParams": {
                             "nameSpace": "http://openrosa.org/formdesigner/266AD1A0-9EAE-483E-B4B2-4E85D6CA8D4B"
                         }
