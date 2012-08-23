@@ -37,7 +37,7 @@ public class ChildcountFormB {
 	public void householdvisit(HouseholdVisitForm info){
 	
 		    //HOUSEHOLD VISIT (+V)
-		    Object[] params = new Object[] {info.healwthID(), info.member_available(), info.under_five(), info.advice_given() };
+		    Object[] params = new Object[] {info.healthID(), info.member_available(), info.under_five(), info.advice_given() };
 		    String vmessage = MessageFormat.format(visit_pattern, params);
 		    System.out.println(vmessage);
 		    
@@ -59,8 +59,8 @@ public class ChildcountFormB {
 		    send.submitPost();
 		    */
 		    //FAMILY PLANNING SECTION (+P)
-		    Object[] params = new Object[] {info.healwthID(), info.women_count(), info.women_using_fplanning(), info.fplanning_method() };
-		    String pmessage = MessageFormat.format(fplanning_pattern, params);
+		    Object[] params_p = new Object[] {info.healthID(), info.women_count(), info.women_using_fplanning(), info.fplanning_method() };
+		    String pmessage = MessageFormat.format(fplanning_pattern, params_p);
 		    System.out.println(pmessage);
 		    
 		    
