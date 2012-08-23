@@ -64,8 +64,8 @@ public class ChildcountFormB {
 		    System.out.println(pmessage);
 		    
 		    
-		    ChildcountBridge send = new ChildcountBridge(info.CHWIdentity(), pmessage, "", "");
-		    send.submitPost();
+		    ChildcountBridge psend = new ChildcountBridge(info.CHWIdentity(), pmessage, "", "");
+		    psend.submitPost();
 	}
 
 }
