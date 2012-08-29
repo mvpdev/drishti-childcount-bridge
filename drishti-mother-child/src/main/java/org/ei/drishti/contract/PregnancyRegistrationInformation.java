@@ -69,7 +69,9 @@ public class PregnancyRegistrationInformation {
         return householdhealthid;
     }
 
-
+    public String locationcode() {
+        return "commcare";
+    }
         
     @Override
     public String toString() {
