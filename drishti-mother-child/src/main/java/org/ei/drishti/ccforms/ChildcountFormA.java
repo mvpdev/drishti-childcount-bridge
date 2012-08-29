@@ -49,7 +49,7 @@ public class ChildcountFormA {
 	
 	public void registerUnderFive(UnderFiveRegistrationInformation info){
 	
-		    Object[] params = new Object[] {info.healthID(), info.healthID(), info.fullname(), Sex(info.sex()), info.age() ,  info.householdhealthid() };
+		    Object[] params = new Object[] {info.healthID(), info.locationcode(), info.fullname(), Sex(info.sex()), info.age() ,  info.householdhealthid() };
 		    String message = MessageFormat.format(register_pattern, params);
 		    System.out.println(message);
 		    
@@ -70,7 +70,7 @@ public class ChildcountFormA {
 
 	public  void registerHousehold(HouseholdRegistrationInformation info){
 			
-		    Object[] params = new Object[] {info.healthID(), info.healthID(), info.fullname(), Sex(info.sex()), info.age() ,  "H" };
+		    Object[] params = new Object[] {info.healthID(), info.locationcode(), info.fullname(), Sex(info.sex()), info.age() ,  "H" };
 		    String message = MessageFormat.format(register_pattern, params);
 		    System.out.println(message);
 
@@ -90,7 +90,7 @@ public class ChildcountFormA {
 	
 	public void registerPregnancy(PregnancyRegistrationInformation info){
 	
-		    Object[] params = new Object[] {info.healthID(), info.healthID(), info.fullname(), Sex(info.sex()), info.age() ,  info.householdhealthid() };
+		    Object[] params = new Object[] {info.healthID(), info.locationcode(), info.fullname(), Sex(info.sex()), info.age() ,  info.householdhealthid() };
 		    message = MessageFormat.format(register_pattern, params);
 		    
 		    //ADD MOBILE PHONE

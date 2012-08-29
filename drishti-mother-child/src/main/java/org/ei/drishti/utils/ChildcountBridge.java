@@ -38,7 +38,7 @@ public class ChildcountBridge{
         DefaultHttpClient httpClient = new DefaultHttpClient();
         
 	    try {
-			HttpPost postRequest = new HttpPost("http://localhost:8000/dataentry/commcare/");
+			HttpPost postRequest = new HttpPost("http://localhost:80/dataentry/commcare/");
 	 
 	            List <NameValuePair> ccstring = new ArrayList <NameValuePair>();
 	            ccstring.add(new BasicNameValuePair("identity", identity));

@@ -90,7 +90,10 @@ public class UnderFiveRegistrationInformation {
     public int birthweight(){
         return birthweight;
     }
-    
+     
+    public String locationcode() {
+        return "commcare";
+    }
     
     @Override
     public String toString() {

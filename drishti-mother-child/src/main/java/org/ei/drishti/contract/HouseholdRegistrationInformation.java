@@ -64,7 +64,12 @@ public class HouseholdRegistrationInformation {
     }
 
     public String locationcode() {
-        return locationcode;
+        if(locationcode !=""){
+            return locationcode;
+        }
+        else{
+            return "commcare";
+        }
     }
         
 
