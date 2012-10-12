@@ -32,6 +32,10 @@ public class DrishtiController {
         FormA.registerUnderFive(childInformation);
     }
 
+    public void UnderFiveVisit(UnderFiveVisitForm visitInformation){
+        logger.info("Underfive Visit: " + visitInformation);
+        FormB.underfivevisit(visitInformation);
+    }
    
     //Pregnancy Module
     public void registerPregnancy(PregnancyRegistrationInformation pregnancyInformation) {
