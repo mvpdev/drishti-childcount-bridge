@@ -101,7 +101,7 @@ public class ChildcountFormA {
 		    message = MessageFormat.format(register_pattern, params);
 		    
 		    //ADD MOBILE PHONE
-		    String mobile = info.mob
+		    String mobile = info.mobile();
 		    /*
 		    if(Isnotnull(mobile)==true)
 		    {
