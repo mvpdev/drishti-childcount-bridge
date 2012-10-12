@@ -31,9 +31,9 @@
                 {
                     "name": "UnderFiveVisit",
                     "url": {
-                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "base": "https://www.commcarehq.org/a/mvp-potou/reports/export/",
                         "queryParams": {
-                            "nameSpace": "http://openrosa.org/formdesigner/266AD1A0-9EAE-483E-B4B2-4E85D6CA8D4B"
+                            "nameSpace": "http://openrosa.org/formdesigner/B9CEFDCD-8068-425F-BA67-7DC897030A5A"
                         }
                     },
                     "mappings": {
@@ -79,7 +79,7 @@
                 {
                     "name": "PregnancyVisit",
                     "url": {
-                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "base": "https://www.commcarehq.org/a/mvp-potou/reports/export/",
                         "queryParams": {
                             "nameSpace": "http://openrosa.org/formdesigner/185A7E63-0ECD-4D9A-8357-6FD770B6F065"
                         }
