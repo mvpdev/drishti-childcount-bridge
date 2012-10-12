@@ -1,19 +1,3 @@
-/*
-* PUSHES DATA FROM COMMCARE MODULES TO CC+ Household Visit FORM B
-* Main Commcare Modules
-*     == households visit
-* 
-* CHILDCOUNT FORM B > Registration DATA to be mapped with commcare modules
-*     Health ID
-*     +V 
-*     
-*     household Health ID
-*  
-*  String visit_pattern = "{HID} +V {member_available} {underfive} {advice}";
-*  String fplanning_pattern = "{HID} +P {women} {using_fplanning} {method}";
-* 
-*/
-
 package org.ei.drishti.ccforms;
 
 import org.ei.drishti.utils.ChildcountBridge;
@@ -64,11 +48,19 @@ public class ChildcountFormB {
 		    System.out.println(pmessage);
 		    
 		    
-		    ChildcountBridge send = new ChildcountBridge(info.CHWIdentity(), pmessage, "", "");
-		    send.submitPost();
+		    ChildcountBridge psend = new ChildcountBridge(info.CHWIdentity(), pmessage, "", "");
+		    psend.submitPost();
 	}
 
+	public void pregnancyvisit(PregnancyVisitForm info){
+	
+		    //Pregnancy VISIT (+V)
+		    
+	}
+
+	public void underfivevisit(UnderFiveVisitForm info){
+	
+		    //Underfive VISIT (+V)
+		    
+	}
 }
-
-
-

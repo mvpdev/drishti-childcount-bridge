@@ -51,7 +51,6 @@ public class ChildcountFormA {
 	
 		    Object[] params = new Object[] {info.healthID(), info.locationcode(), info.fullname(), Sex(info.sex()), info.age() ,  info.householdhealthid() };
 		    String message = MessageFormat.format(register_pattern, params);
-		    System.out.println(message);
 		    
 		    //Add BIRTH
 		    String clinicdelivery = info.clinicdelivery();
@@ -60,10 +59,13 @@ public class ChildcountFormA {
 		        motherid = info.householdhealthid();
 		    }
 		    if(clinicdelivery=="yes" || clinicdelivery=="no"){
-		        //Object[] bir = new Object[] {motherid, info.clinicdelivery(), info.birthweight()};
-		        //message += MessageFormat.format(birth_pattern, bir);
+
+		            Object[] bir = new Object[] {motherid, codedAnswers(info.clinicdelivery()), info.birthweight()};
+		            message += MessageFormat.format(birth_pattern, bir);
 		    }
 		    
+		    System.out.println(message);
+
 		    ChildcountBridge send = new ChildcountBridge(info.CHWIdentity(), message, "", "");
 		    send.submitPost();
 	}
@@ -72,16 +74,21 @@ public class ChildcountFormA {
 			
 		    Object[] params = new Object[] {info.healthID(), info.locationcode(), info.fullname(), Sex(info.sex()), info.age() ,  "H" };
 		    String message = MessageFormat.format(register_pattern, params);
-		    System.out.println(message);
 
 		    //ADD MOBILE PHONE
 		    String mobile = info.mobile();
-		    if(mobile !="" )
+		    /*
+		    if(Isnotnull(mobile)==true)
+
 		    {
 		        Object[] mob = new Object[] {info.mobile()};
 		        message += MessageFormat.format(mobile_pattern, mob);
 		    }
+
+		    */
 		    
+		    System.out.println(message);
+
 		    ChildcountBridge send = new ChildcountBridge(info.CHWIdentity(), message, "", "");
 		    send.submitPost();
 		    
@@ -94,22 +101,21 @@ public class ChildcountFormA {
 		    message = MessageFormat.format(register_pattern, params);
 		    
 		    //ADD MOBILE PHONE
-		    String mobile = info.mobile();
-		    if(mobile !="" )
+		    String mobile = info.mob
+		    /*
+		    if(Isnotnull(mobile)==true)
 		    {
 		        Object[] mob = new Object[] {info.mobile()};
 		        message += MessageFormat.format(mobile_pattern, mob);
 		    }
+		    */
+
 		    
 		    System.out.println(message);
 		    ChildcountBridge send = new ChildcountBridge(info.CHWIdentity(), message, "", "");
 		    send.submitPost();
-		    
-		    
-		    
 	}
 		
-
 	private static String Sex(String sex){
 	
 	    if(sex.toLowerCase()=="male"){
@@ -123,8 +129,16 @@ public class ChildcountFormA {
 		}
 	}
 
-
+    public static String codedAnswers(String string){
+        if(string.toLowerCase()=="yes"){
+			   return "Y";
+		}
+		else if(string.toLowerCase()=="no"){
+		    return  "N";
+		}
+		else{
+		    return "N";
+		}
+    
+    }
 }
-
-
-

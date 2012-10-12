@@ -75,6 +75,6 @@ public class PregnancyRegistrationInformation {
         
     @Override
     public String toString() {
-        return MessageFormat.format("Pregnancy Registration : healthID: {0}, Name: {1}, Case: {2}. age: {5} : {3} dob: {4}", healthID, fullname, caseId, age, dob, dobknown);
+        return MessageFormat.format("Pregnancy Registration : healthID: {0}, Name: {1}, DOB/AGE: {2}", healthID, fullname, age);
     }
 }

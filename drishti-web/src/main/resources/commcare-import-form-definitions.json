@@ -1,6 +1,6 @@
 {
-    "userName": "username@email.com",
-    "password": "password",
+    "userName": "mose.kate@gmail.com",
+    "password": "internet",
     "modules": [
         {
             "forms": [
@@ -26,6 +26,27 @@
                         "form|mothers_health_id": "motherhealthid",
                         "form|household_head_id": "householdhealthid",
                         "form|delivered_in_facility": "clinicdelivery"
+                    }
+                },
+                {
+                    "name": "UnderFiveVisit",
+                    "url": {
+                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "queryParams": {
+                            "nameSpace": "http://openrosa.org/formdesigner/266AD1A0-9EAE-483E-B4B2-4E85D6CA8D4B"
+                        }
+                    },
+                    "mappings": {
+                        "form|meta|username": "CHWIdentity",
+                        "form|case|@case_id": "caseId",
+                        "form|health_id": "healthID",
+                        "form|visit_hospital": "visitedHospital",
+                        "form|prev_referral_type": "prevReferralType",
+                        "form|condition_improved": "conditionImproved",
+                        "form|immediate_danger_sign": "immediatedangerSigns",
+                        "form|emergency_danger_sign": "emergencydangerSigns",
+                        "form|case|update|referral_given": "referralGiven",
+                        "form|case|update|referral_type": "referralType"
                     }
                 }
             ]
@@ -53,6 +74,29 @@
                         "form|edd_known": "eddknown",
                         "form|mobile_phone_number": "mobile",
                         "form|household_head_health_id": "householdhealthid"
+                    }
+                },
+                {
+                    "name": "PregnancyVisit",
+                    "url": {
+                        "base": "https://www.commcarehq.org/a/mvp-sauri/reports/export/",
+                        "queryParams": {
+                            "nameSpace": "http://openrosa.org/formdesigner/185A7E63-0ECD-4D9A-8357-6FD770B6F065"
+                        }
+                    },
+                    "mappings": {
+                        "form|meta|username": "CHWIdentity",
+                        "form|case|@case_id": "caseId",
+                        "form|health_id": "healthID",
+                        "form|visit_hospital": "visitedHospital",
+                        "form|prev_referral_type": "prevReferralType",
+                        "form|condition_improved": "conditionImproved",
+                        "form|immediate_danger_sign": "immediatedangerSigns",
+                        "form|emergency_danger_sign": "emergencydangerSigns",
+                        "form|case|update|referral_given": "referralGiven",
+                        "form|case|update|referral_type": "referralType",
+                        "form|group_counseling|iron": "iron",
+                        "form|group_counseling|folic": "folic"
                     }
                 }
             ]
