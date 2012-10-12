@@ -121,7 +121,7 @@
             <artifactId>tomcat-maven-plugin</artifactId>
             <configuration>
                      <server>myserver</server>
-                     <path>/drishti-web</path>
+                     <path>/drishti</path>
                      <url>http://localhost:8080/manager/html</url>
             </configuration>
         </plugin>
