@@ -84,18 +84,24 @@ public class ChildcountFormB {
                     if(out_put.equals("bednet")){
                         advice +=" BN";
                     }
-                    if(out_put.equals("handwashing")){
-                        advice +=" SH";
-                    }
-                    if(out_put.equals("latrines")){
-                        advice +=" SH";
-                    }
-                    if(out_put.equals("water_purification")){
+                    if(out_put.equals("handwashing") || out_put.equals("latrines") || out_put.equals("water_purification")){
                         advice +=" SH";
                     }
                   }
                   return advice;
 	}
+	
+      public static String codedAnswers(String string){
+        if(string.toLowerCase().equals("yes"){
+			   return "Y";
+		}
+		else if(string.toLowerCase().equals("no"){
+		    return  "N";
+		}
+		else{
+		    return "N";
+		}
+    }
 }
 
 
