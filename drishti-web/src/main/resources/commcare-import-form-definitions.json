@@ -139,6 +139,7 @@
                         "form|member_available": "member_available",
                         "form|num_ec": "women_count",
                         "form|num_using_fp": "women_using_fplanning",
+                        "form|fp_type": "fplanning_method",
                         "form|any_other_sick": "other_sickmembers",
                         "form|num_RDT_other": "no_rdt",
                         "form|num_other_positive": "positive_rdt",
