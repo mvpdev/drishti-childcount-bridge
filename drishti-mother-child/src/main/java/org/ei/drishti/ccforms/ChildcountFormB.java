@@ -92,7 +92,7 @@ public class ChildcountFormB {
 	}
 	
       public static String yes_no(String string){
-        if(string.toLowerCase().equals("yes")){
+                if(string.toLowerCase().equals("yes")){
 			   return "Y";
 		}
 		else if(string.toLowerCase().equals("no")){
