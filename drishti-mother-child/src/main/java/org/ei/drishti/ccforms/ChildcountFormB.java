@@ -23,7 +23,7 @@ public class ChildcountFormB {
 	public void householdvisit(HouseholdVisitForm info){
 	
 		    //HOUSEHOLD VISIT (+V)
-		    Object[] params = new Object[] {info.healthID(), info.member_available(), info.under_five(), advice_coded(info.advice_given()) };
+		    Object[] params = new Object[] {info.healthID(), yes_no(info.member_available()), info.under_five(), advice_coded(info.advice_given()) };
 		    String vmessage = MessageFormat.format(visit_pattern, params);
 		    System.out.println(vmessage);
 		    
@@ -91,11 +91,11 @@ public class ChildcountFormB {
                   return advice;
 	}
 	
-      public static String codedAnswers(String string){
-        if(string.toLowerCase().equals("yes"){
+      public static String yes_no(String string){
+        if(string.toLowerCase().equals("yes")){
 			   return "Y";
 		}
-		else if(string.toLowerCase().equals("no"){
+		else if(string.toLowerCase().equals("no")){
 		    return  "N";
 		}
 		else{
