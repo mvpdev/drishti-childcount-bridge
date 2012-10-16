@@ -18,9 +18,6 @@ public class ChildcountFormB {
 	private static String fplanning_pattern = "{0} +P {1} {2} {3} ";
 	private static String sick_pattern = "{0} +E {1} {2} {3} ";
 	//Underfive
-	private static String visit_pattern = "{0} +V {1} {2} {3}";
-	private static String fplanning_pattern = "{0} +P {1} {2} {3} ";
-	private static String sick_pattern = "{0} +E {1} {2} {3} ";
 	
 	
 	public void householdvisit(HouseholdVisitForm info){
