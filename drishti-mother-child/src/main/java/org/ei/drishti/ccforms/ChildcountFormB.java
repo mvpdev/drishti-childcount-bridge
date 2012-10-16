@@ -13,15 +13,17 @@ public class ChildcountFormB {
 	private String message;
 	private static String params;
 	
+	//household
 	private static String visit_pattern = "{0} +V {1} {2} {3}";
 	private static String fplanning_pattern = "{0} +P {1} {2} {3} ";
 	private static String sick_pattern = "{0} +E {1} {2} {3} ";
+	//Underfive
 	
 	
 	public void householdvisit(HouseholdVisitForm info){
 	
 		    //HOUSEHOLD VISIT (+V)
-		    Object[] params = new Object[] {info.healthID(), info.member_available(), info.under_five(), info.advice_given() };
+		    Object[] params = new Object[] {info.healthID(), info.member_available(), info.under_five(), advice_coded(info.advice_given()) };
 		    String vmessage = MessageFormat.format(visit_pattern, params);
 		    System.out.println(vmessage);
 		    
@@ -62,5 +64,36 @@ public class ChildcountFormB {
 	
 		    //Underfive VISIT (+V)
 		    
+	}
+	
+		
+	public static String advice_coded(String string){	
+		  String str = string.toLowerCase();
+
+                  /* delimiter */
+                  String delimiter = " ";
+                  String advice = "";
+                  /* given string will be split by the argument delimiter provided. */
+                  String[] temp = str.split(delimiter);
+                  /* print substrings */
+                  for(int i =0; i < temp.length ; i++){
+                    String out_put= temp[i].trim();
+                    if(out_put.equals("family_planning")){
+                        advice +="FP";
+                    }
+                    if(out_put.equals("bednet")){
+                        advice +=" BN";
+                    }
+                    if(out_put.equals("handwashing")){
+                        advice +=" SH";
+                    }
+                    if(out_put.equals("latrines")){
+                        advice +=" SH";
+                    }
+                    if(out_put.equals("water_purification")){
+                        advice +=" SH";
+                    }
+                  }
+                  return advice;
 	}
 }
