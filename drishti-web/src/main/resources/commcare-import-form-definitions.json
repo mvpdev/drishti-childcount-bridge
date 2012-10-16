@@ -144,7 +144,7 @@
                         "form|num_other_positive": "positive_rdt",
                         "form|any_antimalarial_other": "anti_malarial",
                         "form|num_antimalarials_other": "num_anti_malarial",
-                        "form|counseling|counsel_type_ec": "advice_given"
+                        "form|cur_counsel_topics": "advice_given"
                     }
                 }
             ]
