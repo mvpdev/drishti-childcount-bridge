@@ -99,7 +99,7 @@ public class HouseholdVisitForm {
                   String[] temp = str.split(delimiter);
                   /* print substrings */
                   for(int i =0; i < temp.length ; i++){
-                    String out_put= temp[i].trim();
+                    out_put= temp[i].trim();
                     if(out_put.equals("condom")){
                         out_put +=" CD";
                     }
