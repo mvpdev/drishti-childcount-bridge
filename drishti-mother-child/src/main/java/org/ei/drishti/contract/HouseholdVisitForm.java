@@ -89,8 +89,38 @@ public class HouseholdVisitForm {
         return member_available;
     }
     
-    public String fplanning_method() {
-        return fplanning_method;
+    public String fplanning_method() {	
+		  String str = fplanning_method.toLowerCase();
+
+                  /* delimiter */
+                  String delimiter = " ";
+                  String out_put = "";
+                  /* given string will be split by the argument delimiter provided. */
+                  String[] temp = str.split(delimiter);
+                  /* print substrings */
+                  for(int i =0; i < temp.length ; i++){
+                    String out_put= temp[i].trim();
+                    if(out_put.equals("condom")){
+                        out_put +=" CD";
+                    }
+                    if(out_put.equals("iud")){
+                        out_put +=" IUD";
+                    }
+                    if(out_put.equals("ij")){
+                        out_put +=" IJ";
+                    }
+                    if(out_put.equals("pl")){
+                        out_put +="PL";
+                    }
+                    
+                    if(out_put.equals("st")){
+                        out_put +="ST";
+                    }
+                    if(out_put.equals("ip")){
+                        out_put +=" IP";
+                    }
+                  }
+                  return out_put;
     }
     
     public String women_using_fplanning() {
@@ -104,6 +134,6 @@ public class HouseholdVisitForm {
     
     @Override
     public String toString() {
-        return MessageFormat.format("Household Visit: healthID: {0}, Case: {2}. ", healthID, caseId);
+        return MessageFormat.format("Household Visit: healthID: {0}, Case: {1}. ", healthID, caseId);
     }
 }
